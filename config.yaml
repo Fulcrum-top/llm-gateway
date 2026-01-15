@@ -4,6 +4,11 @@ model_list:
       model: moonshot/kimi-k2-0905-preview
       api_base: https://api.moonshot.cn/v1
       api_key: "os.environ/KIMI_API_KEY"
+  - model_name: deepseek
+    litellm_params:
+      model: deepseek/deepseek-chat
+      api_base: https://api.deepseek.com/v1
+      api_key: "os.environ/DEEPSEEK_API_KEY"
 
 litellm_settings:
   num_retries: 1
