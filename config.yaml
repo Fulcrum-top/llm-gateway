@@ -9,6 +9,11 @@ model_list:
       model: deepseek/deepseek-chat
       api_base: https://api.deepseek.com/v1
       api_key: "os.environ/DEEPSEEK_API_KEY"
+  - model_name: glm
+    litellm_params:
+      model: openai/glm-5
+      api_base: https://open.bigmodel.cn/api/paas/v4
+      api_key: "os.environ/GLM_API_KEY"
 
 litellm_settings:
   num_retries: 1
